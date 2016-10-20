@@ -80,7 +80,7 @@ function update() {
     }
     
     
-    game.pyhsics.arcade.collide(stars,platforms);
+    game.physics.arcade.collide(stars,platforms);
     game.physics.arcade.overlap(player, stars, collectStar, null,this);
     function collectStar (player, star){
     star.kill();
